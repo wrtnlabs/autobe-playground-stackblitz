@@ -6,7 +6,6 @@ import path from "path";
 import { WorkerConnector } from "tgrid";
 import { AutoBePlaygroundServer } from "@autobe/playground-server";
 import { AutoBeAgent } from "@autobe/agent";
-import { AutoBeCompiler } from "@autobe/compiler";
 
 const application = () => {
   const app: express.Express = express();
@@ -42,7 +41,7 @@ const server = async () => {
             locale: acceptor.header.locale,
             timezone: acceptor.header.timezone,
           },
-          compiler: new AutoBeCompiler(),
+          compiler: compiler.getDriver(),
         }),
       }),
     });

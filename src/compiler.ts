@@ -2,8 +2,8 @@ import { AutoBeCompiler } from "@autobe/compiler";
 import { WorkerServer } from "tgrid";
 
 const main = async () => {
-  const compiler = new AutoBeCompiler();
-  const worker = new WorkerServer();
+  const compiler: AutoBeCompiler = new AutoBeCompiler();
+  const worker: WorkerServer<null, AutoBeCompiler, null> = new WorkerServer();
   await worker.open(compiler);
 };
 main().catch((error) => {
