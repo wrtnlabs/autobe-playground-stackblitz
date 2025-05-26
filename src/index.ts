@@ -8,6 +8,15 @@ import { AutoBePlaygroundServer } from "@autobe/playground-server";
 import { AutoBeAgent } from "@autobe/agent";
 import { AutoBeCompiler } from "@autobe/compiler";
 
+const application = () => {
+  const app: express.Express = express();
+  app.use(
+    "/",
+    express.static(`${__dirname}/../node_modules/@autobe/playground-ui/dist`)
+  );
+  app.listen(3000);
+};
+
 const server = async () => {
   const compiler: WorkerConnector<null, null, IAutoBeCompiler> =
     new WorkerConnector(null, null, "process");
@@ -40,23 +49,13 @@ const server = async () => {
   await server.open(443);
 };
 
-const application = () => {
-  const app: express.Express = express();
-  app.use(
-    "/",
-    express.static(`${__dirname}/../node_modules/@autobe/playground-ui/dist`)
-  );
-  app.listen(3000);
-};
-
 const main = async () => {
-  // await server();
-  server;
   application();
+  await server();
 
   console.log("AutoBe Playground server is running on port 3000");
   console.log("");
-  console.log("http://127.0.0.1:3000");
-  console.log("http://localhost:3000");
+  console.log("- http://127.0.0.1:3000");
+  console.log("- http://localhost:3000");
 };
 main().catch(console.error);
