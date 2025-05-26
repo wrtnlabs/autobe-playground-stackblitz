@@ -4,6 +4,7 @@
   "description": "AutoBE Playground Website",
   "main": "index.js",
   "scripts": {
+    "prepare": "ts-patch install",
     "start": "ts-node src/index.ts"
   },
   "repository": {
