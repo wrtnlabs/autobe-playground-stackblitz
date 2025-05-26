@@ -30,7 +30,6 @@
     "@nestjs/platform-express": "^11.1.2",
     "@nestjs/serve-static": "^5.0.3",
     "@samchon/openapi": "latest",
-    "express": "^5.1.0",
     "openai": "^4.103.0",
     "tgrid": "latest",
     "tstl": "^3.0.0",
@@ -40,6 +39,7 @@
     "@types/express": "^5.0.2",
     "@types/node": "^22.15.21",
     "ts-node": "^10.9.2",
+    "ts-patch": "^3.3.0",
     "typescript": "~5.8.3"
   }
 }
