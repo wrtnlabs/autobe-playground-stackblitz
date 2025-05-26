@@ -18,6 +18,7 @@
   "homepage": "https://github.com/wrtnlabs/autobe-playground-stackbtliz#readme",
   "dependencies": {
     "@autobe/agent": "latest",
+    "@autobe/compiler": "latest",
     "@autobe/interface": "latest",
     "@autobe/playground-server": "latest",
     "@autobe/playground-ui": "latest",

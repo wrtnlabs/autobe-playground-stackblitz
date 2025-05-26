@@ -6,6 +6,7 @@ import path from "path";
 import { WorkerConnector } from "tgrid";
 import { AutoBePlaygroundServer } from "@autobe/playground-server";
 import { AutoBeAgent } from "@autobe/agent";
+import { AutoBeCompiler } from "@autobe/compiler";
 
 const server = async () => {
   const compiler: WorkerConnector<null, null, IAutoBeCompiler> =
@@ -32,7 +33,7 @@ const server = async () => {
             locale: acceptor.header.locale,
             timezone: acceptor.header.timezone,
           },
-          compiler: compiler.getDriver(),
+          compiler: new AutoBeCompiler(),
         }),
       }),
     });
@@ -49,10 +50,13 @@ const application = () => {
 };
 
 const main = async () => {
-  await server();
+  // await server();
+  server;
   application();
 
   console.log("AutoBe Playground server is running on port 3000");
+  console.log("");
+  console.log("http://127.0.0.1:3000");
   console.log("http://localhost:3000");
 };
 main().catch(console.error);
