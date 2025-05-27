@@ -1,0 +1,42 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+updates:
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 25
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@autobe/*"
+      - dependency-name: "@nestia/*"
+      - dependency-name: "@nestjs/*"
+      - dependency-name: "@samchon/*"
+      - dependency-name: "openai"
+      - dependency-name: "tgrid"
+      - dependency-name: "tstl"
+      - dependency-name: "typia"
+      - dependency-name: "typescript"
+      - dependency-name: "ts-patch"
+
+    groups:
+      AutoBE:
+        patterns:
+          - "@autobe/*"
+          - "@nestia/*"
+          - "@samchon/*"
+          - "openai"
+          - "tgrid"
+          - "typia"
+          - "tstl"
+      NestJS:
+        patterns:
+          - "@nestjs/*"
+      TypeScript:
+        patterns:
+          - "typescript"
+          - "ts-patch"
