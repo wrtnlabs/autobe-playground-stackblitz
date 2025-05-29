@@ -82,7 +82,7 @@ const save = async (props: {
     });
 
   for (const [key, value] of Object.entries(props.files)) {
-    const file: string = path.resolve(`${props.root}/${key}`);
+    const file: string = path.resolve(props.root, key);
     await directory.get(path.dirname(file));
     await fs.promises.writeFile(file, value, "utf8");
   }
