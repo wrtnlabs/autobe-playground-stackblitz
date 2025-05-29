@@ -81,17 +81,16 @@ const save = async (props: {
       recursive: true,
     });
 
+  const directory = new VariadicSingleton(async (location: string) => {
+    try {
+      await fs.promises.mkdir(location, {
+        recursive: true,
+      });
+    } catch {}
+  });
   for (const [key, value] of Object.entries(props.files)) {
     const file: string = path.resolve(props.root, key);
     await directory.get(path.dirname(file));
     await fs.promises.writeFile(file, value, "utf8");
   }
 };
-
-const directory = new VariadicSingleton(async (location: string) => {
-  try {
-    await fs.promises.mkdir(location, {
-      recursive: true,
-    });
-  } catch {}
-});
