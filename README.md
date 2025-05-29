@@ -15,3 +15,11 @@ The following are example scripts used to create a [BBS (Bulletin Board System)]
 1. I want to create a political/economic discussion board. Since I'm not familiar with programming, please write a requirements analysis report as you see fit. The report should be approximately 3 pages long.
 2. Design the database schema
 3. Create the API interface specification
+
+## StackBlitz Bug
+
+![Click Instead](https://github.com/user-attachments/assets/c2a3157c-f0f5-456d-9301-fd00a73f086c)
+
+StackBlitz's WebContainer can be unstable and may occasionally fail to save files properly.
+
+If the `result` directory is missing or empty even after successful code generation, please click the "Open in new window" button in the frontend application as an alternative.
