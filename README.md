@@ -1,6 +1,6 @@
 # AutoBE Agent Playground
 
-https://github.com/wrtnlabs/autobe
+[https://github.com/wrtnlabs/autobe](https://github.com/wrtnlabs/autobe)
 
 AutoBE Agent is currently being set up. Please wait a moment.
 
