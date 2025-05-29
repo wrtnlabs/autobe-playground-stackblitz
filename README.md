@@ -18,7 +18,7 @@ The following are example scripts used to create a [BBS (Bulletin Board System)]
 
 ## StackBlitz Bug
 
-![Click Instead](https://github.com/user-attachments/assets/c2a3157c-f0f5-456d-9301-fd00a73f086c)
+![Click Instead](images/open-in-new-window.png)
 
 StackBlitz's WebContainer can be unstable and may occasionally fail to save files properly.
 
