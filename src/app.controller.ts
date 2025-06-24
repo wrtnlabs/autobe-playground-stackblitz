@@ -52,9 +52,11 @@ export class AppController {
     });
 
     // EVENT LISTENERS
-    const archive = () =>
+    const archive = async () =>
       save({
-        files: agent.getFiles(),
+        files: await agent.getFiles({
+          dbms: "sqlite",
+        }),
         root: `${__dirname}/../result`,
       });
     agent.on("analyzeComplete", archive);
