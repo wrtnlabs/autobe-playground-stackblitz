@@ -15,3 +15,4 @@ The following are example scripts used to create a [BBS (Bulletin Board System)]
 1. I want to create a political/economic discussion board. Since I'm not familiar with programming, please write a requirements analysis report as you see fit.
 2. Design the database schema.
 3. Create the API interface specification.
+4. Make the e2e test functions.
