@@ -48,7 +48,7 @@ export class AppController {
         locale: acceptor.header.locale,
         timezone: acceptor.header.timezone,
       },
-      compiler: compiler.getDriver(),
+      compiler: () => compiler.getDriver(),
     });
 
     // EVENT LISTENERS
