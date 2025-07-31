@@ -16,3 +16,10 @@ The following are example scripts used to create a [BBS (Bulletin Board System)]
 2. Design the database schema.
 3. Create the API interface specification.
 4. Make the e2e test functions.
+5. Implement the API functions.
+
+## License
+
+This project is licensed under the GNU Affero General Public License v3.0. See the [LICENSE](LICENSE) file for details.
+
+For commercial use of `@autobe` generated backend applications, please purchase a commercial license (coming soon).
