@@ -1,7 +1,7 @@
 import { AutoBeAgent } from "@autobe/agent";
 import {
   IAutoBeCompiler,
-  IAutoBeRpcHeader,
+  IAutoBePlaygroundHeader,
   IAutoBeRpcListener,
   IAutoBeRpcService,
 } from "@autobe/interface";
@@ -21,7 +21,7 @@ export class AppController {
   public async chat(
     @WebSocketRoute.Acceptor()
     acceptor: WebSocketAcceptor<
-      IAutoBeRpcHeader<ILlmSchema.Model>,
+      IAutoBePlaygroundHeader<ILlmSchema.Model>,
       IAutoBeRpcService,
       IAutoBeRpcListener
     >
