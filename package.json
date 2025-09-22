@@ -24,7 +24,7 @@
     "@autobe/playground-server": "^0.18.0",
     "@autobe/playground-ui": "^0.18.0",
     "@autobe/rpc": "^0.24.1",
-    "@nestia/core": "^8.0.7",
+    "@nestia/core": "^8.0.8",
     "@nestjs/common": "^11.1.6",
     "@nestjs/core": "^11.1.6",
     "@nestjs/platform-express": "^11.1.6",
