@@ -29,7 +29,7 @@
     "@nestjs/core": "^11.1.6",
     "@nestjs/platform-express": "^11.1.6",
     "@nestjs/serve-static": "^5.0.4",
-    "@samchon/openapi": "^4.7.1",
+    "@samchon/openapi": "^4.7.2",
     "openai": "^6.3.0",
     "tgrid": "^1.2.0",
     "tstl": "^3.0.0",
