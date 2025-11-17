@@ -21,7 +21,6 @@
     "@autobe/agent": "^0.29.1",
     "@autobe/compiler": "^0.29.1",
     "@autobe/interface": "^0.29.1",
-    "@autobe/playground-server": "^0.29.1",
     "@autobe/playground-ui": "^0.29.1",
     "@autobe/rpc": "^0.29.1",
     "@nestia/core": "^9.0.2",
