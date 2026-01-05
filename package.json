@@ -23,7 +23,7 @@
     "@autobe/interface": "^0.29.2",
     "@autobe/playground-ui": "^0.29.1",
     "@autobe/rpc": "^0.29.2",
-    "@nestia/core": "^10.0.0",
+    "@nestia/core": "^10.0.1",
     "@nestjs/common": "^11.1.11",
     "@nestjs/core": "^11.1.11",
     "@nestjs/platform-express": "^11.1.11",
